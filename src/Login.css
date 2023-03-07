@@ -1,0 +1,10 @@
+.login{
+    font-family: Garamond, serif;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20%;
+        margin-left: 25%;
+        margin-right: 25%;
+      }

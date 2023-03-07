@@ -13,6 +13,7 @@ import SearchBar from './SearchBar';
 import {useDispatch, useSelector} from 'react-redux';
 import {setCity} from './State/City';
 import {selectCityName} from './State/City/Selectors';
+import './Home.css'
 
 const Home = () => {
  const [cityName, setCityName] = useState("");
