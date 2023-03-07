@@ -1,0 +1,24 @@
+body {
+    background-image: url('../public/images/mainBG.jpeg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Garamond, serif;
+  }
+
+  .greeting{
+    font-family: Garamond, serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .btn btn-primary{
+    color: #adb5bd;
+  }
+  /* for some reason the button color won't change */

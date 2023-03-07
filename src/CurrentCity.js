@@ -5,6 +5,7 @@ import React from 'react';
 import { useCallback, useEffect, useState } from 'react';
 import {selectCityName} from './State/City/Selectors';
 import {useDispatch, useSelector} from 'react-redux';
+import './CurrentCity.css';
 
 const CurrentCity = () => {
     const cityName = useSelector((state)=>selectCityName(state))
@@ -34,14 +35,18 @@ const CurrentCity = () => {
       }, [fetchData]);
 
     return <div className="currentCity">
+        {/* <div class="card">
+            <div class="card-body"> */}
         <h1>{weatherData?.name}</h1>
         <h2>Current Temp is {weatherData?.main.temp}</h2>
         <h2>Feels Like {weatherData?.main.feels_like}</h2>
         <h2>The current weather conditions are {weatherData?.weather[0].description}</h2>
-
-    </div>
+        </div>
+    //     </div>
+    // </div>
 
    
 }
 
 export default CurrentCity;
+

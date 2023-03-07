@@ -1,0 +1,10 @@
+.airQuality{
+    font-family: Garamond, serif;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+}
