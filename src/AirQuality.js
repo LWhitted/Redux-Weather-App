@@ -3,6 +3,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { selectCityName } from './State/City/Selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import './AirQuality.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const AirQuality = () => {
     const [data, setAirQualityData] = useState();
@@ -20,14 +22,18 @@ const AirQuality = () => {
         fetchAQData();
     }, [fetchAQData]);
     return <div className="airQuality">
-        {/* <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Air Quality</h5> */}
-                <p>Your current air quality is: {data?.status}.</p>
-                <p>Want more info on your city's air quality? <a href={data?.data.city.url}>CLICK HERE</a></p>
-            </div>
-    //     </div>
-    // </div>
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src="/images/AQIndex.jpeg" />
+            <Card.Body>
+                <Card.Title>Air Quality</Card.Title>
+                <Card.Text>
+                    <p>Your current air quality is: {data?.status}.</p>
+                    <p>Want more info on your city's air quality?</p>
+                </Card.Text>
+                <Button variant="primary" href="{data?.data.city.url}">Click Here</Button>
+            </Card.Body>
+        </Card>
+    </div>
 }
 export default AirQuality;
 
