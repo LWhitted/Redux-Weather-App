@@ -16,11 +16,11 @@ return (
         <Navbar />
         <div className="content">
     <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path="/Home" element={<Home />} />
     <Route path="/CurrentCity" element={<CurrentCity />} />
     <Route path="/AirQuality" element={<AirQuality />} />
     <Route path="/SearchBar" element={<SearchBar />} />
-    <Route path="/Login" element={<Login />} />
+    <Route path="/" element={<Login />} />
     </Routes>
     </div>
     </div>
