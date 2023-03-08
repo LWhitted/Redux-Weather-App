@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className="navbar">
             <h1>YourForecast</h1>
             <div className="links">
-                <Link to="/">Back to Search</Link>
+                <Link to="/Home">Back to Search</Link>
             </div>
         </nav>
     );
