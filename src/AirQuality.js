@@ -30,7 +30,7 @@ const AirQuality = () => {
                     <p>Your current air quality is: {data?.status}.</p>
                     <p>Want more info on your city's air quality?</p>
                 </Card.Text>
-                <Button variant="primary" href="{data?.data.city.url}">Click Here</Button>
+                <Button variant="primary" href={data?.data.city.url}>Click Here</Button>
             </Card.Body>
         </Card>
     </div>

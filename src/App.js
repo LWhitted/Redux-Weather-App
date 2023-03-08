@@ -10,23 +10,24 @@ import './App.css'
 
 const  App=() =>{
 return (
-  <>
-  <Router>
-  <div className="App">
-        <Navbar />
-        <div className="content">
-    <Routes>
-    <Route path="/Home" element={<Home />} />
-    <Route path="/CurrentCity" element={<CurrentCity />} />
-    <Route path="/AirQuality" element={<AirQuality />} />
-    <Route path="/SearchBar" element={<SearchBar />} />
-    <Route path="/" element={<Login />} />
-    </Routes>
-    </div>
-    </div>
-  </Router>
+  // <>
+  // <Router>
+  // <div className="App">
+  //       <Navbar />
+  //       <div className="content">
+  //   <Routes>
+  //   <Route path="/Home" element={<Home />} />
+  //   <Route path="/CurrentCity" element={<CurrentCity />} />
+  //   <Route path="/AirQuality" element={<AirQuality />} />
+  //   <Route path="/SearchBar" element={<SearchBar />} />
+  //   <Route path="/" element={<Login />} />
+  //   </Routes>
+  //   </div>
+  //   </div>
+  // </Router>
   
-  </>
+  // </>
+  <Login />
 )
 }
 export default App;
